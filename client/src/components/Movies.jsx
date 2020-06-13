@@ -12,6 +12,8 @@ class Movies extends React.Component {
   // If you're currently showing the fave list, delete the movie instead
   // You can tell which list is currently being rendered based on whether the prop "showFaves" is false (search results) or true (fave list) (within index.jsx)
 
+  //*onClick I'm a few steps away from, would've liked to use the response object of a genre query to map over, dynamically populate this list
+
   render() {
     return (
       <ul className="movies">

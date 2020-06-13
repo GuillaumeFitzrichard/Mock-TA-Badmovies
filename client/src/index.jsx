@@ -7,14 +7,17 @@ import Movies from './components/Movies.jsx'
 
 class App extends React.Component {
   constructor(props) {
-  	super(props)
-  	this.state = {
+  super(props)
+  this.state = {
       movies: [{deway: "movies"}],
       favorites: [{deway: "favorites"}],
       showFaves: false,
     };
-    
+    this.getMovies = this.getMovies.bind(this);
+    this.saveMovie = this.saveMovie.bind(this);
+    this.deleteMovie = this.deleteMovie.bind(this);
     // you might have to do something important here!
+    //though I didn't get to where this was important
   }
 
   getMovies() {
@@ -37,7 +40,7 @@ class App extends React.Component {
   }
 
   render () {
-  	return (
+    return (
       <div className="app">
         <header className="navbar"><h1>Bad Movies</h1></header> 
         
